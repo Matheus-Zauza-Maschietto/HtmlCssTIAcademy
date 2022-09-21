@@ -1,0 +1,2 @@
+1 - A medida EM possui como base as dimensões da tag pai, assim replicando ela, já a tag REM usa como refencia a tag :root para especificar o tamanho desejado
+2 - Uma variavel seguindo os bons métodos é criada dentro da tag :root, tendo como sintaxe --nome-desejado: oqueDesejaSalvar, já para acessar seu valor a sintaxe é var(--nome-variavel)

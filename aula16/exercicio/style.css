@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+div:hover{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}

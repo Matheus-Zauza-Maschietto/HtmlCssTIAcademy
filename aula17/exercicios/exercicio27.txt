@@ -1,0 +1,3 @@
+1 - Podemos definir uma url como o endereço do site, contendo dominio, subdominio e TLD
+2 - O HTTP é o protocolo usado para transferencia de informações na internet
+3 - Vendors são prefixos usados para definir propiedades experimentais especificas para um determinado tipo de navegador 

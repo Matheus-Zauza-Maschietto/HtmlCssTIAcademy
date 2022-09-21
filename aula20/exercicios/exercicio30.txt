@@ -1,0 +1,2 @@
+1 - a propiedade usada parar criar sombras em caixas é a box shadow
+2 - o SSL irá garantir a transmissão dos dados, alem de garantir a segurança dos dados enviador.

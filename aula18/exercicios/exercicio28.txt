@@ -1,0 +1,2 @@
+1 - É possivel descobrir qual a fonte padrão atraves do dev tools no navegador
+2 - Não, quando o css ou html é alerado no dev tools, a alteração é temporaria e so ocorre no navegador, o arquivo continua intacto

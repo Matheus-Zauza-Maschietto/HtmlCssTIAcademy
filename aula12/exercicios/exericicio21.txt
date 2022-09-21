@@ -1,0 +1,3 @@
+1 - Não, apesar de ser recomendado não é obrigatorio, isso envolve muito mais uma quesão de boas praticas do que de sintaxe correta
+2 - Não, um elemento html so possui elementos filhos se exister algum outro elemento html dentro dele
+3 - A viewport é a parte da tela onde o navegador define como usavel para os elementos html/css

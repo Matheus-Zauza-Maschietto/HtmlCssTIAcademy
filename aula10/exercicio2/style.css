@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#mother-div{
+    background-color: royalblue;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.child-div{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+}
+.child-div:nth-child(1){
+    top: 0;
+    left: 0;
+}
+.child-div:nth-child(2){
+    top: 0;
+    right: 0;
+}
+.child-div:nth-child(3){
+    bottom: 0;
+    right: 0;
+}
+.child-div:nth-child(4){
+    bottom: 0;
+    left: 0;
+}

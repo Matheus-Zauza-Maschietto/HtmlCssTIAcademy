@@ -1,0 +1,3 @@
+1 - backgorund-color: linear-gradient(direction, colo1, color2, colorN);
+2 - Não, no css os arquivos css exteriores tem como objetivo criar um ambiente propio e mais organizado para o codigo como um todo
+3 - Px é uma medida que possui amanho fixo, já a medida % tem como parametro a tag superior, assim dimensionando as coisas com base no tamanho externo

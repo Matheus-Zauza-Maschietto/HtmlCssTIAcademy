@@ -1,0 +1,2 @@
+1 - article
+2 - não pois a tag <p> que possui a semantica de conter um paragrafo de texto

@@ -1,0 +1,3 @@
+1 - Sim, nesse tipo de refenrenciação de elementos filhos, ele selecionará todos elementos filhos diretos, e todos elementos filhos indiretos
+2 - Não a propiedade background-size tem capacidade de apenas alterar o tamanho visual dos arquivos, seu tamanho de armazenamento continua o mesmo
+3 - não, a tag responsavel por criar titulos em até 6 niveis é <h1>, <h2>, <h3>, <h4>, <h5>, <h6> 

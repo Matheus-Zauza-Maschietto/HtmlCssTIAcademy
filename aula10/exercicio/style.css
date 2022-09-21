@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}

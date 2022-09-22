@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 100%;
+    --cor-border-geral: #CFD8DC;
+    --cor-padrao-fonte: #434f55;
+}
+
+main, header{
+    width: 80vw;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 80px;
+    border-bottom:1px var(--cor-border-geral) solid ;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+nav>div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo h1{
+    font-size: clamp(40px, 35px, 5vw);
+    font-family: Poppins, sans-serif;
+    color: red;
+}
+
+
+#contato a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(54, 49, 49);
+    font-family: Poppins, sans-serif;
+    font-size: clamp(30px, 25px, 5vw);
+    padding: 0 10px;
+}
+
+#contato:hover{
+    background-color: red;
+    color: white;
+    transition-duration: 500ms;
+    
+}
+
+#contato:hover a, #contato:hover span{
+    color: white;
+    transition-duration: 500ms;
+}
+
+#email-svg{
+    color: black;    
+}
+
+.section-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
+    width: clamp(380px, 30%, 280px);
+    height: 460px;
+}
+
+.card>img{
+    width: 100%;
+    height: auto;
+}
+
+.card>h3{
+    font-size: 35px;
+    font-family: Poppins, sans-serif;
+    color: black;
+    padding: 5px 0 15px 0;
+}
+
+.card>form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.choose{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card .tamanho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-family: Poppins, sans-serif;;
+    font-size: 15px;
+}
+
+.tamanho > .radio{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.tamanho:hover > input, .tamanho:hover > label{
+    transform: scale(1.1);
+}
+
+#sub-button{
+    background-color: rgb(59, 110, 8);
+    width: 50%;
+    padding: 10px 0;
+    border: none;
+    font-family: Poppins, sans-serif;;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#sub-button:hover{
+    transition-duration: 500ms;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 50px;
+    height: 200px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+footer>div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#social-media{
+    list-style: none;
+    
+}

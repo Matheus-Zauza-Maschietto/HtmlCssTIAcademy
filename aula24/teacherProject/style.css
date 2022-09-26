@@ -13,7 +13,7 @@
 
 a{
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: clamp(15px, 2vw, 25px);
     font-family: var(--fonte-padrao);
     color: var(--cor-padrao-fonte);
     width: 100%;
@@ -33,7 +33,7 @@ a.go:hover{
     font-size: 1.5rem;
 }
 
-header, main, footer{
+header, main{
     width: 80%;
     margin: auto;
 }
@@ -55,7 +55,7 @@ header#top-header h1{
     align-items: center;
     color: var(--fonte-cor-titulo);
     font-family: var(--fonte-padrao);
-    font-size: clamp(0.8rem, 2.2vh, 3rem);
+    font-size: clamp(15px, 2.5vw, 40px);
 }
 
 header#top-header nav#menu ul#list-menu{
@@ -74,13 +74,16 @@ section#section-cards{
     margin-top: 20px;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 section#section-cards div.card{
     width: 320px;
-    height: 400px;
+    height: auto;
     flex-grow: 1;
+    max-width: 600px;
+    margin-bottom: 20px;
 }
 
 section#section-cards div.card figure.card-img-pizza{
@@ -125,6 +128,15 @@ h2.sub-titulo-pizza{
     color: white;
 }
 footer{
-    height: 200px;
+    height: 100px;
+    width: 100vw;
     background-color: black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 13px;
 }

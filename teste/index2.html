@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fundo{
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .elemento{
+            animation-name: bolha;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            color: white;
+            font-size: 30px;
+        }
+        @keyframes bolha {
+            14.2%, 85.2%{
+                transform: translateX(45vw);
+            }
+            28.4%{
+                transform: translate(45vw, -45vh);
+            }
+            42.6%{
+                transform: translate(-45vw, -45vh);
+            }
+            56.8%{
+                transform: translate(-45vw, 45vh);
+            }
+            71%{
+                transform: translate(45vw, 45vh);
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="fundo">
+        <span class="material-symbols-outlined elemento">
+            change_circle
+        </span>
+    </div>
+</body>
+</html>

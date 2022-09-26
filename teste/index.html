@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .example {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes example {
+            0%, 100% {
+                background-color: black;
+            }
+            50% {
+                background-color: white;}    
+            }
+        .wave{      
+            width: auto;
+            height: auto;
+            font-size: 60px;
+            color: white;
+            -webkit-box-reflect: below -20px linear-gradient(transparent, rgb(0, 0, 0, 0.2));
+            
+        }
+        .wave span{
+            display: inline-block;
+            animation: wave-anim 1s infinite;
+            animation-delay: calc(0.1s * var(--item));
+        }
+
+        @keyframes wave-anim{
+            0%,
+            
+            100% {
+                transform: translateY(0);
+            }
+            50%{
+                color: black;
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="example">
+        <div class="wave">
+            <span style="--item:1">C</span>
+            <span style="--item:2">O</span>
+            <span style="--item:3">D</span>
+            <span style="--item:4">I</span>
+            <span style="--item:5">N</span>
+            <span style="--item:6">G</span>
+        </div>
+    </div>
+</body>
+</html>

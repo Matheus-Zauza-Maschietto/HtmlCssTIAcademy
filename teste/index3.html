@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+        .elemento{
+            color: rgb(39, 107, 209);
+            animation-name: rain;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: calc(0.1s * var(--item));
+        }
+        @keyframes rain {
+            0%{
+                color: rgb(39, 107, 209, 0);
+               transform: translateY(0); 
+            }
+            10%{
+                color: rgb(39, 107, 209, 1);
+            }
+            100%{
+                color: rgb(39, 107, 209, 0);
+                transform: translateY(80vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <span class="material-symbols-outlined elemento" style="--item:4">
+        water_drop
+    </span>
+    <span class="material-symbols-outlined elemento" style="--item:2">
+        water_drop
+    </span>
+    <span class="material-symbols-outlined elemento" style="--item:1">
+        water_drop
+    </span>
+    <span class="material-symbols-outlined elemento" style="--item:3">
+        water_drop
+    </span>
+    <span class="material-symbols-outlined elemento" style="--item:5">
+        water_drop
+    </span>
+</body>
+</html>

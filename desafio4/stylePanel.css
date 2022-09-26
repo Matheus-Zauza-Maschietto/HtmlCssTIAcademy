@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.menu{
+    height: 100vh;
+    width: clamp(150px, 20vw, 350px);
+    background-color: black;
+}
+
+.menu ul{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+li{
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    list-style: none;
+}
+
+li:hover{
+    background-color: white;
+    transition-duration: 2s;
+}
+
+li:hover>a{
+    color: black;
+    
+}

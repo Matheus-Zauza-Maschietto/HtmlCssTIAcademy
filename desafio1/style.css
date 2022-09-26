@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor1: #212121;
+    --cor2: #f9a825;
+    --font: Verdana;
+}
+
+body{
+    height: 100vh;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--font), sans-serif;
+    font-size: clamp(10px, 2.5vw, 20px);
+}
+
+.flex{
+    display: flex;
+}
+
+header, main, footer{
+    width: 90vw;
+    margin: auto;
+    font-family: var(--font), sans-serif;
+}
+
+header{
+    background-color: var(--cor1);
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+
+header h1{
+    font-size: clamp(15px, 2.5vw, 30px);
+    color: white;
+}
+
+header nav, header h1{
+    width: 50%;
+    margin: 20px;
+}
+
+.list-header{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.item-list-header:nth-child(1){
+    background-color: var(--cor2);
+    border-radius: 100rem;
+}
+
+.item-list-header{
+    list-style: none;
+    width: clamp(60px ,30%, 120px);
+    height: 36px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card{
+    border: 1px var(--cor1) solid;
+    width: clamp(300px, 50%, 700px);
+    height: clamp(350px, 40%, 700px);
+    justify-content: center;
+    align-items: center;
+}
+
+.card > div{
+    width: 50%;
+    height: 90%;
+    
+}
+
+.card .text-part{
+    border-right: 1px var(--cor1) dashed;
+    text-align: justify;
+    font-size: clamp(13px, 1.7vw, 15px);
+}
+.card .form-part{
+    border-left: 1px var(--cor1) dashed;
+    font-size: clamp(12px, 1.3vw, 15px);
+} 
+.card .form-part, .card .text-part{
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+form input{
+    width: 90%;
+    height: 28px;
+    padding: 10px;
+    margin: 10px;
+}
+
+form button{
+    width: clamp(100px, 1.7vw, 160px);
+    height: 22px;
+    color: white;
+    background-color: var(--cor1);
+    border: none;
+}
+
+footer{
+    height: 80px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(12px, 2vw, 15px);
+}
+
+@media (max-width: 500px) {
+    header h1{
+        width: 30%;
+    }
+    header nav{
+        width: 70%;
+    }
+    header, main, footer{
+        width: 100vw;
+    }
+}

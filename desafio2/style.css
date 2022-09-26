@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1: #2196f3;
+    --cor2: #3d5afe;
+    --cor3: #0d47a1;
+    --fonte: Verdana sans-serif;
+}
+
+header, main, footer{
+    width: 100vw;
+}
+
+header{
+    height: 200px;
+}
+
+header:nth-child(1){
+    height: 85%;
+    background: linear-gradient(var(--cor3), var(--cor1));
+    color: white;
+}

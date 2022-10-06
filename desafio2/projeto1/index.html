@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,14 +24,64 @@
     <main class="flex centralizado">
         <form action="" cla>
             <fieldset class="flex" id="formulario">
-                <label for="cep" class="flex">Cep<input type="text" name="cep" id="cep" required></label>
-                <label for="rua" class="flex">Rua<input type="text" name="rua" id="rua"></label>
-                <label for="bairro" class="flex">Bairro<input type="text" name="bairro" id="bairro"></label>
-                <label for="cidade" class="flex">Cidade<input type="text" name="cidade" id="cidade"></label>
-                <label for="estado" class="flex">Estado<input type="text" name="estado" id="estado"></label>
-                <button type="submit">Buscar</button>
+                <label for="cep" class="flex" id="cep-label">Cep
+                    <input type="text" name="cep" id="cep">
+                </label>
+                <label for="rua" class="flex" id="logradouro-label">Rua
+                    <input type="text" name="rua" id="logradouro">
+                </label>
+                <label for="bairro" class="flex" id="bairro-label">Bairro
+                    <input type="text" name="bairro" id="bairro">
+                </label>
+                <label for="cidade" class="flex" id="localidade-label">Cidade
+                    <input type="text" name="cidade" id="localidade">
+                </label>
+                <label for="estado" class="flex" id="uf-label">Estado
+                    <input type="text" name="estado" id="uf">
+                </label>
+                <input type="button" value="Buscar" id="search">
+                
             </fieldset>
         </form>
     </main>
 </body>
 </html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ME ACHA!</title>
+</head>
+<body>
+    <header>
+        <h1>ME ACHA!</h1>
+        <h2>ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h2>
+            <span id="logo" class="material-symbols-outlined">
+                travel_explore
+                </span>
+        
+    </header>
+    <div class="flex form">
+        <fieldset class="flex">
+            <form action="" id="form">
+                <label for="cep">Cep</label>
+                <input type="text" name="cep" id="NumeroCep">
+                <label for="rua">Rua</label>
+                <input type="text" name="rua" id="logradouro">
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="localidade">
+                <label for="estado">Estado</label>
+                <input type="text" name="estado" id="uf">
+                <input type="button" class="btn" value="BUSCAR" nome= "buscar" id="buscarCep">
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html> -->
